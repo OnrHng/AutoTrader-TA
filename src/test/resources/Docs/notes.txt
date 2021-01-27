@@ -1,0 +1,20 @@
+BDD behavior driven development + Data Driven development(featura dosyasinda example table kullanimi) =  Hybrid Framework
+
+    Keyword Driven Testing
+    Apachi POI
+    Database
+
+
+/*
+  FAYDALI NOTLAR
+
+  projeninizi framework icerisinde ne kadar merkezilestirirseniz sonradan CD/CI maintenance kolaylasir.
+
+* */
+
+
+  // locator lari bulmak icin kolay yollardan biri SelectorsHub plugini chrome indir.
+  // piyasada ki en iyi locator finder selectorshub
+
+// bu cookilerdeki problemi cozmek icin work around methodolojisini uyguladik, yani bir probblemi direk cozemiyorsaniz
+// etrafindan dolanabiliyor musunuz hadisesi
