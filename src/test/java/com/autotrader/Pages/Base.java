@@ -10,10 +10,10 @@ public class Base {
     PageFactory.initElements(MyDriver.get(), this);
   }
 
-  public void waitSomeTime(Long miliseconds) {
+  public static void waitSomeTime(int milliseconds) {
 
     try {
-      Thread.sleep(miliseconds);
+      Thread.sleep(milliseconds);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
@@ -32,6 +32,9 @@ public class Base {
    *  arguments[0] = link web element, it can be any web element
    */
   public void scrollDown(WebElement str) {
+    /*
+      If element is not visible, you have to find it
+     */
     JavascriptExecutor javascriptExecutor = (JavascriptExecutor) MyDriver.get();
 
     javascriptExecutor.executeScript("arguments[0].scrollIntoView(true)",str);
