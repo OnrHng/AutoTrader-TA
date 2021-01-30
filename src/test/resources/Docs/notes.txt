@@ -18,3 +18,32 @@ BDD behavior driven development + Data Driven development(featura dosyasinda exa
 
 // bu cookilerdeki problemi cozmek icin work around methodolojisini uyguladik, yani bir probblemi direk cozemiyorsaniz
 // etrafindan dolanabiliyor musunuz hadisesi
+
+
+Runner neden ihtiyacimiz var?
+    projeyi command line da calistirmak icin ihtiyacimiz var.
+
+
+Reports
+
+Paralel Testing
+    birden fazla testi es zamanli kosma. Bunun icinde eger mehtodlarinizda
+    singleton design patter kullanildi ise. bu asmak icin
+    Driverpool yapilarak her yeni thread i onun icinde tanimlanmalidir
+
+    Junit te paralel testing
+        pom daki pluginler den surefire pluginin altina parallel configuration larini
+        all olarak ayarlanmalidir. ayrica burada thread countlarini da
+        senario larini kadar ayarlanmalidir.
+
+CrossBrowser Testing
+    birden farkli browser lar test kosmak kullanilan yaklasimdir.
+    iki turlu uygulanabilir. properties den browser degistirilebilir
+    yada ikinci method tanimlanip orada driver baska bir browser
+    icin cagrilir.
+    En onemlisi Driver(WebDriverManager) classinda butun browser optionlarini
+    tanimlanmalidir. Yani buradaki setup niz goz onune almalisiniz.
+
+
+Selenium Grid
+

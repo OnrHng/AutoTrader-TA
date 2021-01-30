@@ -72,6 +72,7 @@ public class AdvanceSearchPage extends Base{
   }
 
   public void chooseModel(String model) {
+//    waitSomeTime(100);
     scrollDown(carModel);
     Select modelOfCar =  new Select(carModel);
     modelOfCar.selectByValue(model);

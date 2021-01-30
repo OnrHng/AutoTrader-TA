@@ -16,6 +16,7 @@ public class AdvanceSearchSteps {
 
   @Given("User is on Advance Search page")
   public void userClickAdvanceSearchLinkOnTheHomePage() {
+//    Base.waitSomeTime(1000);
     MyDriver.get().get(ConfigurationReader.getProperty("advanceSearchUrl"));
 
     // check if the title is right

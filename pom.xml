@@ -43,6 +43,13 @@
             <scope>test</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -53,6 +60,7 @@
             <artifactId>cucumber-java</artifactId>
             <version>5.7.0</version>
         </dependency>
+
 
         <!-- both up and down dependency should be the same version. -->
 
@@ -71,9 +79,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
-                    <parallel>method</parallel>
-                    <forkMode>perthread</forkMode>
-                    <threadCount>5</threadCount>
+                    <parallel>methods</parallel>
+<!--                    <forkMode>perthread</forkMode>-->
+                    <threadCount>2</threadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <testFailureIgnore>true</testFailureIgnore>
 
                     <includes>
                         <!-- *Runner means, it will include runner classes name ends with runner.-->
