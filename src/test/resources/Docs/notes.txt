@@ -46,4 +46,97 @@ CrossBrowser Testing
 
 
 Selenium Grid
+video yu tekrar dan izle
+
+
+
+01.31.2021
+=============================
+Product Owner
+    Sprint backlog larin belirlenmesi, dependencies leri belirleme, ROOT MAP hazirlanmasi(bunu yaparken
+  yanliz degiller)
+
+    product owner business analizci ile beraber calisir, proje ile en yetkin kisidir.
+  butun konulara hakim ve storylere doken kisi.
+
+Business Analizci
+
+Produkt manager || Scrum master
+
+Sprint
+    iki hafta ile 4 hafta arsinda degisir. Bircok firma 2 haftalik sprintler tercih
+ edilir.
+
+
+
+===================================
+1-) User Story ve documentation (confluence wiki)
+    User story leri produkt owner ile business analizciler hazirlar.
+
+    Documentation lar icin kullanisli bir tool olan confluence wiki guzeldir.
+  Jira calisiyorsaniz genelde dokumentasyonlari buraya koyarlar.
+
+2-) Points in sprint
+
+    Sprint = 8-10 point
+    1 point = 1 day
+    bir kisiye max 8-10 pointlik bir task verilir.
+
+    110 point 1 Sprint
+
+    2 WEEKS SPRINT
+        Stand-up
+        Sprint planning =>
+        Grooming Section = Backloglari puanlama , herhangi bir gunu yoktur.
+            bu puanlamada su tool https://www.planitpoker.com/ kullanisli
+
+        Sprint retrospective =>
+
+        Environmets = DEV => QA(kendi datanizla test) => UAT(produkttion dan alinan datalarla test) => PROD
+
+    Burndown Chart : Logwork & Efort Spent Time
+
+3-) Conflicts or creating bugs
+    Conflicts :  codelar arasinda olan anlasmazliklar. kisiler arasinda olusan
+        conflicts icin ise ilk once dokumantasyona bakalir. beraber birkez daha
+        gozden gecirilir ve uzlasmaya calisilir. uzlasma olmamasi durumunda
+        ust yetkiliye gidilir.
+
+    Creating Bugs: bug kelimesi onceki zmanlarda pc ler oda buyuklugunde iken,
+        ampul veya led yuvalarina giren boceklerin temizlenmesi olayidir.
+
+        Bug bulunma durumunda bunun birkac kisi tarafindan fikir alindiktan sonra
+        gerekli verileri alarak assign edilmesi gereken kisilere gonderilir.
+
+
+
+4- Decision Table and Traceability
+    Traceability matrix : bir user story nin test edilmesi durumunda ve sonuclarinda
+        yetkililerin bunu gorme isteklerine karsi, raporlama isinde olusturulan
+        table in adidir.
+        bu matrix de soldan saga okumalara veya tam tersini okunmasina izin veren
+        yapidir.
+
+        bu iki konuyu aslinda test cycle olarak dusunebiliriz.
+
+5- Microservices =>
+    bir seyin microservice ile mi yapmak lazim yoksa
+
+    Monolithic ARCHITECTURE  and Microservice Architecture
+      USER INTERFACE               USER INTERFACE
+
+       DATA ACCESS LAYER    MICRO   MICRO   MICRO   MICRO
+           DB                 DB      DB      DB      DB
+
+
+
+
+      FOR EXAMPLE : AMAZON MICROSERVICES
+            ACCOUNT   PRODUCT    CART       ORDER
+            SERVICE   CATALOG    SERVER     SERVER
+              ||        ||        ||          ||
+              V         V          V           V
+            ACCOUNT     CATALOG   CART        ORDER
+            DB          DB         DB          DB
+
 
